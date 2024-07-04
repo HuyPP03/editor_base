@@ -436,7 +436,7 @@ export default function App() {
                 <CKEditor
                   editor={ClassicEditor}
                   config={editorConfig}
-                  onChange={(event, editor) => {
+                  onChange={(_event, editor) => {
                     const data = editor.getData();
                     setEditorData(data);
                   }}
